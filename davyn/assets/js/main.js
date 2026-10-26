@@ -1,12 +1,13 @@
 (function(){
   var hdr=document.getElementById('hdr'),mb=document.querySelector('.menu'),mn=document.getElementById('mnav');
-  function onScroll(){hdr.classList.toggle('scrolled',window.scrollY>24)}
+  var heroEl=document.body.classList.contains('has-hero')?document.querySelector('.hero__frame'):null;
+  function onScroll(){hdr.classList.toggle('scrolled',window.scrollY>24);if(heroEl){var mo=document.getElementById('mnav');hdr.classList.toggle('over',(!mo||mo.hidden)&&window.scrollY<heroEl.offsetHeight-70)}}
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 
   function setMenu(open){
     mn.hidden=!open;mb.setAttribute('aria-expanded',String(open));
     mb.querySelector('.ml').textContent=open?'Close':'Menu';
-    document.body.style.overflow=open?'hidden':'';
+    document.body.style.overflow=open?'hidden':'';onScroll();
     if(open){var f=mn.querySelector('a');if(f)f.focus()}
   }
   if(mb){
