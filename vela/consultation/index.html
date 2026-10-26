@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Book a Consultation · VELA Aesthetics</title>
+<meta name="description" content="Tell us what you would like to explore.">
+<meta property="og:title" content="Book a Consultation · VELA Aesthetics">
+<meta property="og:description" content="Tell us what you would like to explore.">
+<meta property="og:image" content="/assets/images/hero-eye-leaf.jpg">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..800;1,400..600&display=swap">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="VELA Aesthetics, home"><svg viewBox="0 0 1461.4 1416.6" role="img" aria-label="VELA Aesthetics" fill="currentColor"><path d="M777.000,644.400 l201.155,-449.977 l200.202,449.977 h-401.357 Z M431.827,1416.600 l332.716,-743.607 h426.144 l132.515,298.396 h138.234 l-431.864,-971.456 l-546.265,1222.185 l-345.110,-776.974 h-138.234 l431.864,971.456 Z"/></svg></a>
+    <nav aria-label="Primary">
+      <a href="/treatments/">Treatments</a><a href="/approach/">Approach</a><a href="/about/">About</a><a href="/journal/">Journal</a>
+    </nav>
+    <div class="hdr__r">
+      <a class="btn btn--fill" href="/consultation/">Book a consultation <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 9h13M10 4l5 5-5 5"/></svg></a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Open menu"><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav" hidden>
+  <ul>
+    <li><a class="big" href="/treatments/">Treatments <small>01</small></a></li>
+    <li><a class="big" href="/approach/">Approach <small>02</small></a></li>
+    <li><a class="big" href="/about/">About <small>03</small></a></li>
+    <li><a class="big" href="/journal/">Journal <small>04</small></a></li>
+  </ul>
+  <div class="btns"><a class="btn btn--fill" href="/consultation/" style="background:var(--light);color:var(--ink);border-color:var(--light)">Book a consultation <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 9h13M10 4l5 5-5 5"/></svg></a></div>
+</div>
+<main id="main">
+
+  <div class="wrap">
+    <div class="grid ptitle">
+      <p class="eyebrow">Consultation</p>
+      <h1 class="t-mega">Start with a question.</h1>
+      <p class="p-l">Tell us what you would like to explore. We will take it from there.</p>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:clamp(80px,10vw,150px);border-top:1.5px solid var(--ink);padding-top:clamp(40px,5vw,72px)">
+    <div class="grid cform">
+      <aside class="cform__side">
+        <p class="eyebrow">What to expect</p>
+        <ol class="steps" style="border-top-color:var(--rule)">
+          <li style="border-bottom-color:var(--rule)"><span class="n">01</span><h3>Discover</h3><p style="color:var(--ink-2)">Share what brings you in.</p></li>
+          <li style="border-bottom-color:var(--rule)"><span class="n">02</span><h3>Consider</h3><p style="color:var(--ink-2)">Review your options.</p></li>
+          <li style="border-bottom-color:var(--rule)"><span class="n">03</span><h3>Decide</h3><p style="color:var(--ink-2)">Go at your own pace.</p></li>
+        </ol>
+      </aside>
+      <div class="cform__main">
+        <form id="cform" novalidate>
+          <p class="notice">Preview only. Nothing is sent or saved, so please leave out health details.</p>
+          <div class="two">
+            <div class="field"><label for="f-name">Name</label><input id="f-name" type="text" autocomplete="name" required><p class="err" id="e-name"></p></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" autocomplete="email" required><p class="err" id="e-email"></p></div>
+          </div>
+          <fieldset class="field"><legend>I'm interested in</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="interest" id="i-inj" value="Injectables"><span>Injectables</span></label>
+              <label class="opt"><input type="radio" name="interest" id="i-skin" value="Skin Treatments"><span>Skin</span></label>
+              <label class="opt"><input type="radio" name="interest" id="i-ren" value="Laser &amp; Renewal"><span>Laser &amp; Renewal</span></label>
+              <label class="opt"><input type="radio" name="interest" id="i-ns" value="Not Sure"><span>Not sure yet</span></label>
+            </div><p class="err" id="e-interest"></p></fieldset>
+          <fieldset class="field"><legend>Preferred contact</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="contact" id="c-email" value="Email" checked><span>Email</span></label>
+              <label class="opt"><input type="radio" name="contact" id="c-phone" value="Phone"><span>Phone</span></label>
+            </div></fieldset>
+          <div class="field" id="phone-field" hidden><label for="f-phone">Phone</label><input id="f-phone" type="tel" autocomplete="tel"><p class="err" id="e-phone"></p></div>
+          <div class="field"><label for="f-msg">Anything else? (optional)</label><textarea id="f-msg" maxlength="600"></textarea></div>
+          <div class="field"><label class="check" for="f-consent"><input id="f-consent" type="checkbox"> I understand this is a preview and nothing is sent.</label><p class="err" id="e-consent"></p></div>
+          <div><button class="btn btn--fill" type="submit">Preview request <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 9h13M10 4l5 5-5 5"/></svg></button></div>
+        </form>
+        <div class="confirm" id="confirm" hidden tabindex="-1">
+          <p class="eyebrow">Request preview</p>
+          <h2 class="t-l">Thank you, <span id="confirm-name">there</span>.</h2>
+          <p class="p">Preview complete. Nothing was sent or saved.</p>
+          <button class="rb" type="button" id="reset-form">Start again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sec bone pad-s">
+    <div class="wrap grid st"><h2 class="t-l">A conversation, not a commitment.</h2><div class="side"></div></div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="grid ft">
+      <div class="ft__cta"><h2 class="t-l">Feel more like yourself.</h2><p class="p-l" style="color:var(--light-2)">Explore what a thoughtful, individualized approach to aesthetic care could look like.</p><div class="btns"><a class="btn btn--fill" href="/consultation/">Start with a consultation <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 9h13M10 4l5 5-5 5"/></svg></a></div></div>
+      <div class="ft__nav"><h4>Explore</h4><ul><li><a href="/treatments/">Treatments</a></li><li><a href="/approach/">Approach</a></li><li><a href="/about/">About</a></li><li><a href="/journal/">Journal</a></li><li><a href="/consultation/">Consultation</a></li></ul></div>
+      <div class="ft__info"><h4>Studio</h4><p>New York<br>By appointment only</p></div>
+    </div>
+    <div class="ft__word" aria-hidden="true"><svg viewBox="0 0 343.6 100" fill="currentColor"><path d="M71.83,0.00 L41.53,79.73 L11.23,0.00 L0.00,0.00 L38.00,100.00 L76.00,0.00 Z M114.00,50.70 L114.00,96.60 L114.00,100.00 L124.50,100.00 L163.00,100.00 L163.00,96.60 L124.50,96.60 L124.50,50.70 L155.00,50.70 L155.00,47.30 L124.50,47.30 L124.50,3.40 L161.00,3.40 L161.00,0.00 L124.50,0.00 L114.00,0.00 L114.00,3.40 L114.00,47.30 Z M199.00,96.60 L199.00,100.00 L209.50,100.00 L244.00,100.00 L244.00,96.60 L209.50,96.60 L209.50,0.00 L199.00,0.00 Z M319.94,67.40 L332.33,100.00 L343.56,100.00 L330.53,65.70 L329.88,64.00 L305.56,0.00 L281.24,64.00 L279.95,67.40 L267.56,100.00 L271.73,100.00 L284.12,67.40 Z M285.41,64.00 L302.03,20.27 L318.65,64.00 Z"/></svg></div>
+    <div class="ft__base"><span>© 2026 VELA Aesthetics</span><a href="https://dsptchdesign.com" target="_blank" rel="noopener">Site by DSPTCH Design</a></div>
+  </div>
+</footer>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
