@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Request a Quote | XENRO Logistics</title>
+<meta name="description" content="Tell XENRO what needs to move. A demo inquiry form for freight, temperature-controlled, and warehousing needs.">
+<meta property="og:title" content="Request a Quote | XENRO Logistics">
+<meta property="og:description" content="Tell XENRO what needs to move. A demo inquiry form for freight, temperature-controlled, and warehousing needs.">
+<meta name="theme-color" content="#152641">
+<link rel="icon" href="images/xenro-mark.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/archivo-wdth.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arrow" viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="pin" viewBox="0 0 16 16"><path d="M8 14.5s4.5-4.2 4.5-8a4.5 4.5 0 0 0-9 0c0 3.8 4.5 8 4.5 8Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="6.5" r="1.6" fill="currentColor"/></symbol>
+  <symbol id="flag" viewBox="0 0 16 16"><path d="M3.5 14.5v-12M3.5 2.5h8l-1.8 3 1.8 3h-8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="box" viewBox="0 0 16 16"><path d="M2.5 5 8 2l5.5 3v6L8 14l-5.5-3V5Zm0 0L8 8l5.5-3M8 8v6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="check" viewBox="0 0 16 16"><path d="m3 8.5 3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="frame hero page-hero dark quote-hero" id="top" style="--pos:50% 40%">
+  <img class="hero-img" src="images/hero-forest-road.jpg" alt="Aerial view of two freight trucks on a straight highway through a pine forest">
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary">
+      <a href="./" class="logo" aria-label="XENRO Logistics home"><img src="images/xenro-mark.svg" alt="" width="49" height="30"><span>XENRO</span></a>
+      <div class="nav-links">
+        <a href="solutions.html">Solutions</a>
+        <a href="industries.html">Industries</a>
+        <a href="about.html">About</a>
+      </div>
+      <a href="quote.html" class="btn btn-lime" aria-current="page">Request a Quote <span class="arw"><svg><use href="#arrow"/></svg></span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav" id="menu-open"><span></span>Menu</button>
+    </nav>
+    <div class="page-hero-body">
+      <p class="eyebrow lime rise">Start here</p>
+      <h1 class="rise d1">Tell us what <em>needs to move.</em></h1>
+      <p class="hero-lede rise d2">Share a few details about your shipment or storage needs. We’ll show you how a straightforward logistics inquiry can work.</p>
+    </div>
+
+  </div>
+</header>
+
+<main>
+  <div class="wrap quote-wrap">
+    <form class="qform" id="quote-form" novalidate>
+      <fieldset class="qstep">
+        <legend class="qstep-head"><h2>What can we help with?</h2><span>Step 1 of 3</span></legend>
+        <div class="needs" role="radiogroup" aria-describedby="need-err">
+            <input type="radio" name="need" id="need-freight" value="freight"><label for="need-freight">Freight Transportation</label>
+            <input type="radio" name="need" id="need-temperature" value="temperature"><label for="need-temperature">Temperature-Controlled Freight</label>
+            <input type="radio" name="need" id="need-storage" value="storage"><label for="need-storage">Warehousing &amp; Distribution</label>
+            <input type="radio" name="need" id="need-unsure" value="unsure"><label for="need-unsure">Not Sure Yet</label>
+        </div>
+        <p class="err needs-err" id="need-err"></p>
+      </fieldset>
+
+      <fieldset class="qstep is-locked">
+        <legend class="qstep-head"><h2 id="shipment-title">Shipment details</h2><span>Step 2 of 3</span></legend>
+        <div class="fields">
+          <div class="fields full" id="route-fields">
+            <div class="fld"><label for="f-pickup">Pickup city/state</label><input type="text" id="f-pickup" name="pickup" data-label="Pickup city/state" required placeholder="e.g. Joliet, IL" aria-describedby="f-pickup-err"><p class="err" id="f-pickup-err"></p></div>
+            <div class="fld"><label for="f-dest">Destination city/state</label><input type="text" id="f-dest" name="destination" data-label="Destination city/state" required placeholder="e.g. Columbus, OH" aria-describedby="f-dest-err"><p class="err" id="f-dest-err"></p></div>
+          </div>
+          <div class="fields full" id="storage-fields" hidden>
+            <div class="fld"><label for="f-storage">Storage location</label><input type="text" id="f-storage" name="storage_location" data-label="Storage location" required placeholder="City, State" aria-describedby="f-storage-err"><p class="err" id="f-storage-err"></p></div>
+            <div class="fld"><label for="f-spallets">Estimated pallet count</label><input type="text" id="f-spallets" name="storage_pallets" data-label="Estimated pallet count" required placeholder="e.g. 24" inputmode="numeric" aria-describedby="f-spallets-err"><p class="err" id="f-spallets-err"></p></div>
+          </div>
+          <div class="fields full" id="shipment-fields">
+            <div class="fld full"><label for="f-commodity">Shipment type or commodity</label><input type="text" id="f-commodity" name="commodity" data-label="Shipment type or commodity" required placeholder="e.g. Packaged dry goods" aria-describedby="f-commodity-err"><p class="err" id="f-commodity-err"></p></div>
+            <div class="fld"><label for="f-weight">Approximate weight <small>(optional)</small></label><input type="text" id="f-weight" name="weight" data-label="Approximate weight" placeholder="lbs" aria-describedby="f-weight-err"><p class="err" id="f-weight-err"></p></div>
+            <div class="fld"><label for="f-pallets">Pallet count <small>(optional)</small></label><input type="text" id="f-pallets" name="pallets" data-label="Pallet count" placeholder="e.g. 12" inputmode="numeric" aria-describedby="f-pallets-err"><p class="err" id="f-pallets-err"></p></div>
+            <div class="fld full"><label for="f-timing">Timing or target date <small>(optional)</small></label><input type="date" id="f-timing" name="timing" data-label="Timing or target date" aria-describedby="f-timing-err"><p class="err" id="f-timing-err"></p></div>
+            <div class="fld full"><label for="f-details">Additional details <small>(optional)</small></label><textarea id="f-details" name="details" data-label="Additional details" placeholder="Handling requirements, delivery windows, anything we should know" aria-describedby="f-details-err"></textarea><p class="err" id="f-details-err"></p></div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="qstep is-locked">
+        <legend class="qstep-head"><h2>Contact</h2><span>Step 3 of 3</span></legend>
+        <div class="fields">
+            <div class="fld"><label for="f-name">Name</label><input type="text" id="f-name" name="name" data-label="Name" required autocomplete="name" aria-describedby="f-name-err"><p class="err" id="f-name-err"></p></div>
+            <div class="fld"><label for="f-company">Company</label><input type="text" id="f-company" name="company" data-label="Company" required autocomplete="organization" aria-describedby="f-company-err"><p class="err" id="f-company-err"></p></div>
+            <div class="fld"><label for="f-email">Work email</label><input type="email" id="f-email" name="email" data-label="Work email" required autocomplete="email" aria-describedby="f-email-err"><p class="err" id="f-email-err"></p></div>
+            <div class="fld"><label for="f-phone">Phone <small>(optional)</small></label><input type="tel" id="f-phone" name="phone" data-label="Phone" autocomplete="tel" aria-describedby="f-phone-err"><p class="err" id="f-phone-err"></p></div>
+        </div>
+      </fieldset>
+
+      <div class="submit-row">
+        <p>This is a fictional DSPTCH concept website. No logistics quote or service will be provided.</p>
+        <button class="btn btn-lime" type="submit" id="submit-btn"><span class="lbl">Submit Demo Request</span> <span class="arw"><svg><use href="#arrow"/></svg></span></button>
+      </div>
+    </form>
+
+    <aside class="quote-aside" id="quote-aside" aria-label="How it works">
+      <div class="aside-card">
+        <h2>What happens next</h2>
+        <ol>
+          <li><b>01</b><span><strong>Tell us what moves</strong>Share the shipment, schedule, and handling requirements.</span></li>
+          <li><b>02</b><span><strong>Build the plan</strong>We identify an approach for transportation, storage, or both.</span></li>
+          <li><b>03</b><span><strong>Keep it moving</strong>Stay aligned from pickup through delivery.</span></li>
+        </ol>
+      </div>
+      <div class="aside-pic"><img src="images/dock-forklift.jpg" alt="Forklift bringing a loaded pallet across a dock plate into a trailer" loading="lazy"></div>
+    </aside>
+
+    <section class="success" id="quote-success" hidden aria-live="polite">
+      <span class="tick"><svg><use href="#check"/></svg></span>
+      <h2 tabindex="-1">Demo request received.</h2>
+      <p>This is a portfolio demonstration of the inquiry experience. No shipment has been booked and no quote will be issued.</p>
+      <a href="./" class="btn btn-navy">Back to Home <span class="arw"><svg><use href="#arrow"/></svg></span></a>
+    </section>
+  </div>
+</main>
+
+<footer class="frame dark">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="./" class="logo" aria-label="XENRO Logistics home"><img src="images/xenro-mark.svg" alt="" width="49" height="30"><span>XENRO</span></a>
+        <p>Freight, warehousing, and distribution solutions built to keep business moving.</p>
+      </div>
+      <div class="foot-nav">
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="quote.html">Request a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wordmark" aria-hidden="true"><span>XENRO</span></div>
+    <div class="foot-bottom">
+      <span>Site Design by <strong>DSPTCH Design</strong></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mnav" id="mnav" hidden>
+  <div class="mnav-top">
+    <a href="./" class="logo" aria-label="XENRO Logistics home"><img src="images/xenro-mark.svg" alt="" width="49" height="30"><span>XENRO</span></a>
+    <button class="menu-btn" type="button" id="menu-close" style="display:inline-flex">Close</button>
+  </div>
+  <ul>
+    <li><a href="./">Home</a></li>
+    <li><a href="solutions.html">Solutions</a></li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <a href="quote.html" class="btn btn-lime">Request a Quote <span class="arw"><svg><use href="#arrow"/></svg></span></a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

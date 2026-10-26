@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>XENRO Logistics | Freight, Storage & Distribution</title>
+<meta name="description" content="XENRO Logistics brings freight transportation, temperature-controlled logistics, warehousing, and distribution into one clear plan.">
+<meta property="og:title" content="XENRO Logistics | Freight, Storage & Distribution">
+<meta property="og:description" content="XENRO Logistics brings freight transportation, temperature-controlled logistics, warehousing, and distribution into one clear plan.">
+<meta name="theme-color" content="#152641">
+<link rel="icon" href="images/xenro-mark.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/archivo-wdth.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arrow" viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="pin" viewBox="0 0 16 16"><path d="M8 14.5s4.5-4.2 4.5-8a4.5 4.5 0 0 0-9 0c0 3.8 4.5 8 4.5 8Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="6.5" r="1.6" fill="currentColor"/></symbol>
+  <symbol id="flag" viewBox="0 0 16 16"><path d="M3.5 14.5v-12M3.5 2.5h8l-1.8 3 1.8 3h-8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="box" viewBox="0 0 16 16"><path d="M2.5 5 8 2l5.5 3v6L8 14l-5.5-3V5Zm0 0L8 8l5.5-3M8 8v6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="check" viewBox="0 0 16 16"><path d="m3 8.5 3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="frame hero dark" id="top">
+  <img class="hero-img" src="images/hero-forest-road.jpg" alt="Aerial view of two freight trucks on a straight highway through a pine forest" width="2000" height="1498">
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary">
+      <a href="./" class="logo" aria-label="XENRO Logistics home"><img src="images/xenro-mark.svg" alt="" width="49" height="30"><span>XENRO</span></a>
+      <div class="nav-links">
+        <a href="solutions.html">Solutions</a>
+        <a href="industries.html">Industries</a>
+        <a href="about.html">About</a>
+      </div>
+      <a href="quote.html" class="btn btn-lime">Request a Quote <span class="arw"><svg><use href="#arrow"/></svg></span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav" id="menu-open"><span></span>Menu</button>
+    </nav>
+
+    <div class="hero-body">
+      <div>
+        <p class="eyebrow lime rise">Freight / Storage / Distribution</p>
+        <h1 class="rise d1">Complex logistics. <em>Clear direction.</em></h1>
+        <p class="hero-lede rise d2">From the first pickup to the final handoff, XENRO brings freight, storage, and distribution into focus.</p>
+        <div class="hero-ctas rise d3">
+          <a href="quote.html" class="btn btn-lime">Request a Quote <span class="arw"><svg><use href="#arrow"/></svg></span></a>
+          <a href="solutions.html" class="btn btn-ghost">Explore Solutions <span class="arw"><svg><use href="#arrow"/></svg></span></a>
+        </div>
+      </div>
+
+      <form class="qq rise d4" id="qq" action="quote.html" method="get" novalidate>
+        <div class="qq-head">
+          <h2>Start a quote</h2>
+          <span>Step 1 of 3</span>
+        </div>
+        <fieldset class="seg">
+          <legend>What can we help with?</legend>
+          <input type="radio" name="need" id="need-freight" value="freight" checked><label for="need-freight">Freight</label>
+          <input type="radio" name="need" id="need-storage" value="storage"><label for="need-storage">Storage</label>
+          <input type="radio" name="need" id="need-unsure" value="unsure"><label for="need-unsure">Not sure</label>
+        </fieldset>
+        <div class="qq-route">
+          <div class="qq-field">
+            <label for="qq-from" id="qq-from-label">Pickup</label>
+            <div class="in"><svg><use href="#pin"/></svg><input id="qq-from" name="from" placeholder="City, State" autocomplete="off"></div>
+          </div>
+          <div class="qq-field" id="qq-to-wrap">
+            <label for="qq-to" id="qq-to-label">Destination</label>
+            <div class="in"><svg id="qq-to-icon"><use href="#flag"/></svg><input id="qq-to" name="to" placeholder="City, State" autocomplete="off"></div>
+          </div>
+        </div>
+        <button class="btn btn-lime" type="submit">Continue to quote <span class="arw"><svg><use href="#arrow"/></svg></span></button>
+        <p class="qq-note" id="qq-note" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="lanes" aria-label="Service lanes">
+      <ul>
+        <li>Full Truckload</li>
+        <li>Less-Than-Truckload</li>
+        <li>Dry Van</li>
+        <li>Temperature-Controlled</li>
+        <li>Cross-Docking</li>
+        <li>Outbound Distribution</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Capabilities -->
+  <section class="sec" aria-labelledby="cap-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Capabilities</p>
+          <h2 id="cap-h">Every move, considered.</h2>
+        </div>
+        <p>The right solution starts with understanding what your shipment needs.</p>
+      </div>
+
+      <div class="bento">
+        <a class="card card-feature drift" href="solutions.html#freight">
+          <img src="images/freight-truck-field.jpg" alt="White semi-truck moving at speed past green fields at sunrise" loading="lazy" width="2000" height="1380">
+          <div class="txt">
+            <span class="idx">FTL · LTL · Dry Van</span>
+            <div class="row">
+              <div style="display:grid;gap:12px">
+                <h3>Freight Transportation</h3>
+                <p>Full and partial truckload options for planned and changing shipping demands.</p>
+              </div>
+              <span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card card-side drift" href="solutions.html#temperature">
+          <div class="pic"><img src="images/trailer-dusk.jpg" alt="Side of a metal trailer reflecting a pink and blue dusk sky" loading="lazy" style="object-position:50% 30%"></div>
+          <div class="txt">
+            <span class="idx">Refrigerated freight</span>
+            <div class="row">
+              <h3>Temperature-Controlled Logistics</h3>
+              <span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span>
+            </div>
+            <p>Coordinated transport for freight that requires careful temperature handling.</p>
+          </div>
+        </a>
+
+        <a class="card card-side drift" href="solutions.html#warehousing">
+          <div class="pic"><img src="images/warehouse-aisle.jpg" alt="Warehouse worker pulling a pallet jack down a tall racking aisle" loading="lazy" style="object-position:50% 40%"></div>
+          <div class="txt">
+            <span class="idx">Storage · Cross-docking</span>
+            <div class="row">
+              <h3>Warehousing &amp; Distribution</h3>
+              <span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span>
+            </div>
+            <p>Flexible storage, cross-docking, and onward movement, planned around your operation.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statement -->
+  <section class="frame dark" aria-labelledby="stmt-h">
+    <div class="wrap statement-inner">
+      <div class="statement">
+        <div class="statement-pic drift"><img src="images/hangar-light.jpg" alt="A worker silhouetted against bright light, pushing open a huge hangar door" loading="lazy"></div>
+        <div>
+          <p class="eyebrow lime">Our approach</p>
+          <h2 id="stmt-h">Less friction. <span>More forward motion.</span></h2>
+          <p>Logistics gets complicated quickly. We focus on clear plans, responsive coordination, and the details that keep goods moving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="frame process" aria-labelledby="proc-h" style="margin-top:var(--stack)">
+    <div class="wrap sec">
+      <div class="process-top">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2 id="proc-h">A clearer way forward.</h2>
+          <p>Three steps from first conversation to final delivery.</p>
+        </div>
+        <div class="process-pic drift"><img src="images/dock-forklift.jpg" alt="View from inside a trailer as a forklift brings a loaded pallet across the dock plate" loading="lazy"></div>
+      </div>
+      <ol class="route">
+        <li>
+          <span class="node">01</span>
+          <span class="tag">Pickup</span>
+          <h3>Tell us what moves</h3>
+          <p>Share the shipment, schedule, and handling requirements.</p>
+        </li>
+        <li>
+          <span class="node">02</span>
+          <span class="tag">Plan</span>
+          <h3>Build the plan</h3>
+          <p>We identify an approach for transportation, storage, or both.</p>
+        </li>
+        <li>
+          <span class="node">03</span>
+          <span class="tag">Delivery</span>
+          <h3>Keep it moving</h3>
+          <p>Stay aligned from pickup through delivery.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section class="frame dark industries" aria-labelledby="ind-h" style="margin-top:var(--stack)">
+    <img src="images/red-truck.jpg" alt="" loading="lazy">
+    <div class="wrap">
+      <div class="ind-grid">
+        <div>
+          <p class="eyebrow lime">Industries</p>
+          <h2 id="ind-h">Built around your business.</h2>
+          <p class="lede">Different products. Different pressures. One goal: the right handling at every stage.</p>
+          <a href="industries.html" class="btn btn-lime">Explore Industries <span class="arw"><svg><use href="#arrow"/></svg></span></a>
+        </div>
+        <ul class="ind-list">
+          <li><a href="industries.html#food"><span class="n">01</span><span class="t">Food &amp; Beverage</span><span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span></a></li>
+          <li><a href="industries.html#retail"><span class="n">02</span><span class="t">Retail &amp; Consumer Goods</span><span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span></a></li>
+          <li><a href="industries.html#industrial"><span class="n">03</span><span class="t">Industrial &amp; Manufacturing</span><span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span></a></li>
+          <li><a href="industries.html#healthcare"><span class="n">04</span><span class="t">Healthcare Supply Chains</span><span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta-sec" aria-labelledby="cta-h">
+    <div>
+      <div class="cta">
+        <div class="cta-box">
+          <div>
+            <p class="eyebrow">Get started</p>
+            <h2 id="cta-h">Ready to move differently?</h2>
+          </div>
+          <div class="foot">
+            <p>Tell us what you need to ship, store, or distribute.</p>
+            <a href="quote.html" class="btn btn-lime">Request a Quote <span class="arw"><svg><use href="#arrow"/></svg></span></a>
+          </div>
+        </div>
+        <div class="cta-pic"><img src="images/bridge-motion.jpg" alt="A trailer blurs past a steel truss bridge at dusk" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="frame dark">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="./" class="logo" aria-label="XENRO Logistics home"><img src="images/xenro-mark.svg" alt="" width="49" height="30"><span>XENRO</span></a>
+        <p>Freight, warehousing, and distribution solutions built to keep business moving.</p>
+      </div>
+      <div class="foot-nav">
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="quote.html">Request a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wordmark" aria-hidden="true"><span>XENRO</span></div>
+    <div class="foot-bottom">
+      <span>Site Design by <strong>DSPTCH Design</strong></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mnav" id="mnav" hidden>
+  <div class="mnav-top">
+    <a href="./" class="logo" aria-label="XENRO Logistics home"><img src="images/xenro-mark.svg" alt="" width="49" height="30"><span>XENRO</span></a>
+    <button class="menu-btn" type="button" id="menu-close" style="display:inline-flex">Close</button>
+  </div>
+  <ul>
+    <li><a href="./" aria-current="page">Home</a></li>
+    <li><a href="solutions.html">Solutions</a></li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <a href="quote.html" class="btn btn-lime">Request a Quote <span class="arw"><svg><use href="#arrow"/></svg></span></a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
