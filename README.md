@@ -4,6 +4,7 @@ Concept websites by DSPTCH Design. Each folder is a standalone static site deplo
 
 | Folder | Site |
 |---|---|
+| `davyn/` | DAVYN Dental Studio |
 | `vela/` | VELA Aesthetics |
 | `alden-mercer/` | Alden & Mercer |
 | `xenro/` | XENRO Logistics |

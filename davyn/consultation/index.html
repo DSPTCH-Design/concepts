@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Book a Consultation · DAVYN Dental Studio</title>
+<meta name="description" content="Book a consultation with DAVYN Dental Studio. Start with a conversation about your goals, with no commitment.">
+<meta property="og:title" content="Book a Consultation · DAVYN Dental Studio">
+<meta property="og:description" content="Book a consultation with DAVYN Dental Studio. Start with a conversation about your goals, with no commitment.">
+<meta property="og:image" content="/assets/images/chair-window.jpg">
+<meta name="theme-color" content="#0A2E4A">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/geist-mono.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr" id="hdr">
+  <div class="hdr__in">
+    <div class="pill"><a class="logo" href="/" aria-label="DAVYN Dental Studio, home"><span class="wordmark">DAVYN</span><span class="sub">Dental<br>Studio</span></a></div>
+    <nav class="pill nav" aria-label="Primary">
+      <a href="/treatments/">Treatments</a><a href="/experience/">The Experience</a><a href="/studio/">Our Studio</a>
+      <a class="cta" href="/consultation/" aria-current="page"><span>Book<span class="lbl-long"> a Consultation</span></span><i><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 9h13M10 4l5 5-5 5"/></svg></i></a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="mnav"><span aria-hidden="true"><i></i><i></i></span><span class="ml">Menu</span></button>
+    </nav>
+  </div>
+</header>
+<div class="mnav" id="mnav" hidden>
+  <ul><li><a href="/treatments/">Treatments <small>01</small></a></li><li><a href="/experience/">The Experience <small>02</small></a></li><li><a href="/studio/">Our Studio <small>03</small></a></li><li><a href="/consultation/" aria-current="page">Book a Consultation <small>04</small></a></li></ul>
+  <p class="label" style="color:var(--on-ink-mut)">DAVYN Dental Studio · By appointment</p>
+</div>
+<main id="main">
+
+<section class="field" aria-labelledby="ph-h">
+  <div class="glow" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div class="field__head">
+      <p class="label tagpill rv">Book a Consultation</p>
+      <h1 class="t-hero rv" id="ph-h">Let's talk about <span class="it">your smile.</span></h1>
+      <p class="p-l rv d1" style="max-width:620px;color:var(--ink-soft)">Whether you have a specific treatment in mind or are simply exploring options, a consultation is a good place to begin.</p>
+    </div>
+    <div class="cgrid">
+      <aside class="expect rv" aria-labelledby="ex-h">
+        <p class="eyebrow">What to expect</p>
+        <h2 class="t-l" id="ex-h">A conversation, <span class="it">not a commitment.</span></h2>
+        <p class="p mut">We start by listening to your goals and discussing the next appropriate step. Individual treatment recommendations require an in-person clinical assessment.</p>
+        <ol>
+          <li><span class="num">01</span><span>Tell us a little about what you are considering.</span></li>
+          <li><span class="num">02</span><span>We follow up to find a time that suits you.</span></li>
+          <li><span class="num">03</span><span>Your first visit begins with listening.</span></li>
+        </ol>
+      </aside>
+      <div class="fcard rv d1">
+        <p class="notice" id="notice"><span><strong>Preview only. Nothing is sent.</strong> This form works in your browser and does not send, save or store anything you type. Please don't enter health or medical details.</span></p>
+        <form class="form" id="cform" novalidate>
+          <div class="f"><label for="f-name">Name <span class="req" aria-hidden="true">*</span></label><input type="text" id="f-name" name="name" autocomplete="name" required aria-describedby="e-name"><p class="err" id="e-name" aria-live="polite"></p></div>
+          <div class="f"><label for="f-email">Email <span class="req" aria-hidden="true">*</span></label><input type="email" id="f-email" name="email" autocomplete="email" required aria-describedby="e-email"><p class="err" id="e-email" aria-live="polite"></p></div>
+          <fieldset class="f f--full" aria-describedby="e-interest"><legend>Area of interest <span class="req" aria-hidden="true">*</span></legend>
+            <div class="opts"><label class="opt"><input type="radio" name="interest" id="i-cosmetic" value="Cosmetic"><span>Cosmetic</span></label><label class="opt"><input type="radio" name="interest" id="i-restorative" value="Restorative"><span>Restorative</span></label><label class="opt"><input type="radio" name="interest" id="i-preventive" value="Preventive"><span>Preventive</span></label><label class="opt"><input type="radio" name="interest" id="i-unsure" value="Not sure"><span>Not sure yet</span></label></div><p class="err" id="e-interest" aria-live="polite"></p></fieldset>
+          <fieldset class="f f--full" aria-describedby="e-contact"><legend>Preferred contact method <span class="req" aria-hidden="true">*</span></legend>
+            <div class="opts"><label class="opt"><input type="radio" name="contact" id="c-email" value="Email"><span>Email</span></label><label class="opt"><input type="radio" name="contact" id="c-phone" value="Phone"><span>Phone call</span></label></div><p class="err" id="e-contact" aria-live="polite"></p></fieldset>
+          <div class="f f--full" id="phone-field" hidden><label for="f-phone">Phone <span class="req" aria-hidden="true">*</span></label><input type="tel" id="f-phone" name="phone" autocomplete="tel" aria-describedby="e-phone"><p class="err" id="e-phone" aria-live="polite"></p></div>
+          <div class="f f--full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" aria-describedby="h-msg"></textarea><p class="hint" id="h-msg">Share what you would like to talk about in general terms. Please leave out health or medical details.</p></div>
+          <div class="f--full"><button class="btn" type="submit"><span class="btn__l">Send Request</span><span class="btn__a"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 9h13M10 4l5 5-5 5"/></svg></span></button></div>
+        </form>
+        <div class="confirm" id="confirm" tabindex="-1" hidden>
+          <div class="confirm__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+          <h2 class="t-l">Thank you, <span id="confirm-name"></span>.</h2>
+          <p class="p mut">This form is a preview, so nothing has been sent or saved.</p>
+          <div><button class="ulink" type="button" id="reset-form" style="background:none;border-top:0;border-left:0;border-right:0;cursor:pointer">Start again</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reassure pad" aria-labelledby="re-h">
+  <div class="wrap"><div class="grid">
+    <h2 class="t-xl rv" id="re-h">Good questions are <span class="it">always welcome.</span></h2>
+    <p class="p-l mut rv d1">The first step is simply understanding what matters to you.</p>
+  </div></div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="grid">
+      <div class="ft__brand"><p class="eyebrow">DAVYN Dental Studio</p><p class="p-l">Cosmetic, restorative and preventive dentistry, delivered with clarity, consideration and craft.</p></div>
+      <div class="ft__col c1"><h3>Explore</h3><ul><li><a href="/">Home</a></li><li><a href="/treatments/">Treatments</a></li><li><a href="/experience/">The Experience</a></li><li><a href="/studio/">Our Studio</a></li><li><a href="/consultation/">Book a Consultation</a></li></ul></div>
+      <div class="ft__col c2"><h3>Visits</h3><p>By appointment.<br>Every visit begins with a consultation.</p></div>
+      <a class="ft__up" href="#main" aria-label="Back to top"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 9h13M10 4l5 5-5 5"/></svg></a>
+    </div>
+    <p class="ft__word" aria-hidden="true">DAVYN</p>
+    <div class="ft__base"><span>© 2026 DAVYN Dental Studio</span><a href="https://dsptchdesign.com" target="_blank" rel="noopener">Site by DSPTCH Design</a></div>
+  </div>
+</footer>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
