@@ -198,6 +198,8 @@ p{margin:0}
 .foot a:hover{color:var(--paper)}
 .foot .disc{margin-top:48px;padding-top:24px;border-top:1px solid var(--line-dark);display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:30px;font-size:12.5px;line-height:1.6;color:rgba(242,239,233,.5)}
 .foot .credit{text-align:right}
+.foot .credit a{color:var(--paper);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.foot .credit a:hover{color:var(--brass)}
 @media (max-width:760px){.foot-top,.foot .disc{grid-template-columns:1fr}.foot .credit{text-align:left}}
 
 /* Sub-page hero */

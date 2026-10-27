@@ -239,6 +239,8 @@ footer{margin-top:var(--stack);margin-bottom:var(--frame)}
 .wordmark span{display:inline-block}
 .foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-block:24px;border-top:1px solid var(--line-dark);font-size:13px;color:var(--on-dark)}
 .foot-bottom strong{color:var(--white);font-weight:600}
+.foot-bottom a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.foot-bottom a:hover strong{opacity:.75}
 .concept{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line-dark);border-radius:999px;padding:6px 12px;color:var(--lime)}
 
 /* subtle scroll drift where supported (content is fully visible without it) */
