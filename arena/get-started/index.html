@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Get Started · ARENA</title>
+<meta name="description" content="Request a 20-minute intro call with the ARENA care team.">
+<meta property="og:title" content="Get Started · ARENA">
+<meta property="og:description" content="Request a 20-minute intro call with the ARENA care team.">
+<meta property="og:image" content="/assets/images/riders.jpg">
+<meta name="theme-color" content="#141516">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,200..700&family=Hanken+Grotesk:wght@300..600&display=swap">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="/" class="logo" aria-label="ARENA home">ARENA</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/programs/">Programs</a>
+      <a href="/method/">The Method</a>
+      <a href="/experience/">The Experience</a>
+      <a href="/about/">About</a>
+    </nav>
+    <a href="/get-started/" class="btn btn-ghost">Book a consultation <span class="arr">→</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<div class="mnav" id="mnav" hidden>
+  <button class="close" id="menuClose" aria-label="Close menu">×</button>
+  <a href="/">Home</a>
+  <a href="/programs/">Programs</a>
+  <a href="/method/">The Method</a>
+  <a href="/experience/">The Experience</a>
+  <a href="/about/">About</a>
+  <a href="/get-started/" style="color:var(--brass)">Get started</a>
+</div>
+
+<main id="main">
+<section class="page" data-page="get-started">
+  <div class="band-dark">
+    <div class="wrap gs">
+      <div>
+        <h1 class="display d1 line-up"><span>Start with a</span><span>conversation.</span></h1>
+        <p class="muted-d" style="margin-top:26px;max-width:28em">Tell us a little about yourself. A member of our care team will reach out within one business day to schedule a 20-minute intro call. No commitment, no pitch.</p>
+        <ol class="steps">
+          <li><span class="n">01</span><div><h4>Tell us about you.</h4><p>Two minutes, right here.</p></div></li>
+          <li><span class="n">02</span><div><h4>Intro call.</h4><p>Twenty minutes with our care team. We'll talk through your goals and whether ARENA is the right fit.</p></div></li>
+          <li><span class="n">03</span><div><h4>Your assessment.</h4><p>If it is, we'll book your 90-minute assessment and order your labs.</p></div></li>
+        </ol>
+      </div>
+      <div class="formcard" id="formcard">
+        <form id="inq" novalidate>
+          <h2>Request your intro call</h2>
+          <p style="color:var(--stone-dark);font-size:15px">All fields except notes are required.</p>
+          <div class="fields">
+            <div class="f"><label for="fname">First name</label><input id="fname" name="fname" autocomplete="given-name" required></div>
+            <div class="f"><label for="lname">Last name</label><input id="lname" name="lname" autocomplete="family-name" required></div>
+            <div class="f"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required><span class="hint">For scheduling only.</span></div>
+            <div class="f full"><label for="state">State of residence</label><select id="state" name="state" required><option value="">Select your state</option></select><span class="hint">We're licensed in specific states.</span></div>
+            <fieldset class="f full"><legend>What brings you to ARENA?</legend>
+              <div class="chips" id="interests">
+                <label class="chip"><input type="checkbox" id="i-met" name="interest" value="Metabolic health"><span>Metabolic health</span></label>
+                <label class="chip"><input type="checkbox" id="i-wt" name="interest" value="Weight management"><span>Weight management</span></label>
+                <label class="chip"><input type="checkbox" id="i-hor" name="interest" value="Hormone health"><span>Hormone health</span></label>
+                <label class="chip"><input type="checkbox" id="i-lon" name="interest" value="Longevity and prevention"><span>Longevity and prevention</span></label>
+                <label class="chip"><input type="checkbox" id="i-ns" name="interest" value="Not sure yet"><span>Not sure yet</span></label>
+              </div>
+              <span class="hint">Choose any that apply.</span>
+            </fieldset>
+            <div class="f full"><label for="notes">Anything you'd like us to know? (optional)</label><textarea id="notes" name="notes"></textarea><span class="hint">Goals, concerns, timing. Please don't include detailed medical history here.</span></div>
+            <fieldset class="f full"><legend>Best time to reach you</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" id="t-am" name="time" value="Morning" checked><span>Morning</span></label>
+                <label class="chip"><input type="radio" id="t-mid" name="time" value="Midday"><span>Midday</span></label>
+                <label class="chip"><input type="radio" id="t-pm" name="time" value="Evening"><span>Evening</span></label>
+              </div>
+            </fieldset>
+          </div>
+          <p class="err" id="formErr" hidden style="margin-top:20px"></p>
+          <div class="submit">
+            <button type="submit" class="btn btn-dark">Request my intro call <span class="arr">→</span></button>
+            <p class="priv">Your information is kept confidential and used only to contact you about ARENA.</p>
+          </div>
+        </form>
+        <div class="done" id="done" hidden>
+          <div class="tick">✓</div>
+          <h2>Received. We'll be in touch within one business day.</h2>
+          <p style="color:var(--stone-dark);margin-top:14px">In the meantime, you can read how the assessment works or browse our programs.</p>
+          <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:28px">
+            <a href="/method/" class="textlink">The ARENA Method <span class="arr">→</span></a>
+            <a href="/programs/" class="textlink">Programs <span class="arr">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="band-paper sec">
+    <div class="wrap membership">
+      <div>
+        <h2 class="display d2">One membership. Everything that matters, included.</h2>
+      </div>
+      <div>
+        <p class="price">$[—]<small>per month</small></p>
+        <span class="ph-note">Pricing placeholder</span>
+        <p class="lede muted-l" style="margin-top:26px">Membership includes your annual assessment, quarterly reviews, direct physician messaging, and your care lead. Medications, specialty imaging, and certain labs are billed separately and discussed before anything is ordered.</p>
+      </div>
+    </div>
+  </section>
+  <section class="band-bone sec">
+    <div class="wrap head-row" style="align-items:start">
+      <div><h2 class="display d2">Before you call.</h2></div>
+      <div class="faq">
+        <details><summary>Do you accept insurance?<span class="pm">+</span></summary><p>ARENA is a membership-based practice and does not bill insurance directly. Some services may be eligible for HSA or FSA funds; check with your plan administrator.</p></details>
+        <details><summary>Am I eligible for GLP-1 medication?<span class="pm">+</span></summary><p>That's a decision your physician makes after an evaluation. We'll be direct with you either way.</p></details>
+        <details><summary>Do I need testosterone therapy?<span class="pm">+</span></summary><p>Maybe, maybe not. We evaluate the full picture with repeat testing and only recommend treatment when it's clinically indicated.</p></details>
+        <details><summary>Do you offer peptides?<span class="pm">+</span></summary><p>Your physician can discuss the evidence for specific peptides. Many are investigational or not FDA-approved, and we only consider treatments that can be legally prescribed.</p></details>
+        <details><summary>Do I have to live near the clinic?<span class="pm">+</span></summary><p>Your assessment is in person. Many follow-ups can happen by video, depending on the state you live in.</p></details>
+        <details><summary>Can I cancel?<span class="pm">+</span></summary><p>[Cancellation policy to come.]</p></details>
+      </div>
+    </div>
+  </section>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="/" class="logo">ARENA</a>
+        <p style="margin-top:18px;max-width:22em">Physician-led men's health and longevity. Built for what's next.</p>
+      </div>
+      <nav aria-label="Footer"><a href="/programs/">Programs</a><a href="/method/">The Method</a><a href="/experience/">The Experience</a><a href="/about/">About</a><a href="/get-started/">Get started</a></nav>
+      <nav aria-label="Legal"><a href="/">Privacy</a><a href="/">Terms</a><a href="/">Notice of privacy practices</a></nav>
+    </div>
+    <div class="disc">
+      <p>ARENA provides medical services through licensed physicians. Treatment eligibility is determined by a physician after evaluation. Individual results vary. Not all treatments are appropriate for all members. Peptide therapies referenced on this site may be investigational and are not presented as FDA-approved.</p>
+      <p class="credit">© 2026 ARENA<br><a href="https://dsptchdesign.com" target="_blank" rel="noopener">Site by DSPTCH Design</a></p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
