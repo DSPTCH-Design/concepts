@@ -4,6 +4,7 @@ Concept websites by DSPTCH Design. Each folder is a standalone static site deplo
 
 | Folder | Site |
 |---|---|
+| `merrick/` | Merrick Roofing |
 | `arlo/` | ARLO Plumbing |
 | `qubik/` | QUBIK Architecture + Engineering |
 | `arena/` | ARENA Men's Health |
