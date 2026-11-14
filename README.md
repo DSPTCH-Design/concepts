@@ -4,7 +4,7 @@ Concept websites by DSPTCH Design. Each folder is a standalone static site deplo
 
 | Folder | Site |
 |---|---|
-| `apex/` | APEX Plumbing |
+| `arlo/` | ARLO Plumbing |
 | `qubik/` | QUBIK Architecture + Engineering |
 | `arena/` | ARENA Men's Health |
 | `davyn/` | DAVYN Dental Studio |
