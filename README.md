@@ -6,6 +6,7 @@ Concept websites by DSPTCH Design. Each folder is a standalone static site deplo
 |---|---|
 | `merrick/` | Merrick Roofing |
 | `arlo/` | ARLO Plumbing |
+| `arlo-before/` | ARLO Plumbing, dated "before" version for ad demos |
 | `qubik/` | QUBIK Architecture + Engineering |
 | `arena/` | ARENA Men's Health |
 | `davyn/` | DAVYN Dental Studio |
