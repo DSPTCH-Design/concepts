@@ -398,6 +398,8 @@ a:hover>.arrow svg:last-child{transform:none}
 .footer__bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:72px;padding-top:26px;border-top:1px solid rgba(255,255,255,.25);font-size:13px;color:rgba(255,255,255,.85)}
 .footer__legal{display:flex;gap:22px}
 .footer__legal a:hover{text-decoration:underline}
+.footer__credit{font-weight:600;color:#fff;background:linear-gradient(#fff,#fff) no-repeat 0 100%/100% 1px;padding-bottom:1px;transition:background-size .45s var(--ease)}
+.footer__credit:hover{background-size:0 1px;background-position:100% 100%}
 
 /* ---------- responsive ---------- */
 @media (max-width:1080px){
