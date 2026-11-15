@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skin LAB — Medical Aesthetics in Birmingham, Michigan</title>
+<meta name="description" content="Physician-led Botox, fillers and clinical skin treatments in downtown Birmingham, Michigan. Complimentary consultations.">
+<meta name="theme-color" content="#F3F4F2">
+<link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/isans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap header__in">
+    <a class="brand" href="#top" aria-label="Skin LAB home">
+      <!-- logo icon slot: place the supplied icon here, 32px tall -->
+      <img src="assets/logo/skinlab-wordmark.svg" alt="Skin LAB" width="81" height="38">
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#treatments">Treatments</a>
+      <a href="#finder">Finder</a>
+      <a href="#results">Results</a>
+      <a href="#membership">Membership</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="header__cta">
+      <a class="header__tel" href="tel:+12485550142">(248) 555-0142</a>
+      <a class="btn btn--plum" href="#book">Book consultation</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow rv">Medical aesthetics · Birmingham, Michigan</p>
+      <h1 class="display rv" style="--d:.08s">Good skin<br>is a <em>science.</em></h1>
+      <p class="lede rv" style="--d:.16s">Physician-led Botox, fillers and clinical skin treatments.</p>
+      <div class="concern rv" style="--d:.24s">
+        <p class="concern__label">What would you like to refine?</p>
+        <div class="chips">
+          <a class="chip" href="#finder" data-concern="lines">Lines &amp; wrinkles</a>
+          <a class="chip" href="#finder" data-concern="volume">Lips &amp; volume</a>
+          <a class="chip" href="#finder" data-concern="texture">Texture</a>
+          <a class="chip" href="#finder" data-concern="tone">Sun damage</a>
+          <a class="chip" href="#finder" data-concern="glow">Dull skin</a>
+        </div>
+      </div>
+      <div class="hero__foot rv" style="--d:.32s">
+        <a class="btn btn--plum" href="#book">Book a consultation
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 8h12M9.5 3.5 14 8l-4.5 4.5"/></svg>
+        </a>
+        <div class="rating">
+          <span class="rating__n">4.9</span>
+          <span><span class="rating__s">★★★★★</span><br><span class="rating__t">600+ Google reviews</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="assets/img/hero.jpg" alt="A provider marks an injection point at a patient's temple" fetchpriority="high">
+      <div class="consult-tag">
+        <b>Complimentary consultation</b><span>30 min · in person or virtual</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <div class="marquee" aria-label="Why Skin LAB">
+    <div class="marquee__track">
+      <ul>
+        <li>Physician-led since 2016</li><li>Board-certified injectors</li><li>FDA-approved products only</li><li>Per-unit pricing</li><li>Two-week check-ins included</li><li>Complimentary consultations</li>
+      </ul>
+      <ul aria-hidden="true">
+        <li>Physician-led since 2016</li><li>Board-certified injectors</li><li>FDA-approved products only</li><li>Per-unit pricing</li><li>Two-week check-ins included</li><li>Complimentary consultations</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Treatment map -->
+  <section class="section" id="map">
+    <div class="wrap map">
+      <figure class="map__media rv">
+        <img src="assets/img/map.jpg" alt="Patient portrait with treatment areas marked" loading="lazy">
+        <button class="dot is-on" style="left:53%;top:20%" data-area="forehead" aria-label="Forehead">01</button>
+        <button class="dot" style="left:46%;top:37.5%" data-area="eyes" aria-label="Eyes">02</button>
+        <button class="dot" style="left:35%;top:49%" data-area="cheeks" aria-label="Cheeks">03</button>
+        <button class="dot" style="left:46.5%;top:55.5%" data-area="lips" aria-label="Lips">04</button>
+        <button class="dot" style="left:65%;top:58%" data-area="jawline" aria-label="Jawline">05</button>
+        <button class="dot" style="left:44%;top:82%" data-area="skin" aria-label="Skin">06</button>
+      </figure>
+      <div>
+        <p class="eyebrow rv">Treatment map</p>
+        <h2 class="h2 rv" style="--d:.08s">Choose the area.<br><em>We match the treatment.</em></h2>
+        <div class="areas rv" style="--d:.16s" role="tablist" aria-label="Treatment areas">
+          <button class="area is-on" role="tab" aria-selected="true" data-area="forehead">Forehead</button>
+          <button class="area" role="tab" aria-selected="false" data-area="eyes">Eyes</button>
+          <button class="area" role="tab" aria-selected="false" data-area="cheeks">Cheeks</button>
+          <button class="area" role="tab" aria-selected="false" data-area="lips">Lips</button>
+          <button class="area" role="tab" aria-selected="false" data-area="jawline">Jawline</button>
+          <button class="area" role="tab" aria-selected="false" data-area="skin">Skin</button>
+        </div>
+        <div class="panel rv" style="--d:.24s" id="area-panel" aria-live="polite">
+          <div class="panel__head"><span class="panel__n">01 / 06</span><h3 class="h3">Forehead</h3></div>
+          <ul class="rx">
+            <li><b>Botox® Cosmetic</b><span>Softens forehead and frown lines</span><i>10–20 units · from $140</i></li>
+            <li><b>Microneedling + PRP</b><span>Fine lines and texture</span><i>$450</i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature treatments -->
+  <section class="section signature" id="treatments">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow rv">Signature treatments</p>
+          <h2 class="h2 rv" style="--d:.08s">The six we're <em>known for.</em></h2>
+        </div>
+        <a class="link rv" href="#book">Full treatment menu
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 8h12M9.5 3.5 14 8l-4.5 4.5"/></svg>
+        </a>
+      </div>
+      <div class="sig">
+        <ol class="sig__list rv">
+          <li><button class="sig__row is-on" data-fig="Botox"><span><span class="h3">Botox<span class="reg">®</span> Cosmetic</span><span class="sig__meta">Injectable · 15 min</span></span><span class="sig__price">from $14 / unit</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 8h12M9.5 3.5 14 8l-4.5 4.5"/></svg></button></li>
+          <li><button class="sig__row" data-fig="Dermal filler"><span><span class="h3">Dermal filler</span><span class="sig__meta">Injectable · 45 min</span></span><span class="sig__price">from $795 / syringe</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 8h12M9.5 3.5 14 8l-4.5 4.5"/></svg></button></li>
+          <li><button class="sig__row" data-fig="Lip filler"><span><span class="h3">Lip filler</span><span class="sig__meta">Injectable · 45 min</span></span><span class="sig__price">from $695 / syringe</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 8h12M9.5 3.5 14 8l-4.5 4.5"/></svg></button></li>
+          <li><button class="sig__row" data-fig="Microneedling"><span><span class="h3">Microneedling + PRP</span><span class="sig__meta">Skin · 75 min</span></span><span class="sig__price">$450 / session</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 8h12M9.5 3.5 14 8l-4.5 4.5"/></svg></button></li>
+          <li><button class="sig__row" data-fig="Chemical peel"><span><span class="h3">Chemical peel</span><span class="sig__meta">Skin · 40 min</span></span><span class="sig__price">from $175</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 8h12M9.5 3.5 14 8l-4.5 4.5"/></svg></button></li>
+          <li><button class="sig__row" data-fig="Skin boosters"><span><span class="h3">Skin boosters</span><span class="sig__meta">Injectable · 30 min</span></span><span class="sig__price">from $550</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 8h12M9.5 3.5 14 8l-4.5 4.5"/></svg></button></li>
+        </ol>
+        <figure class="sig__media rv" style="--d:.12s">
+          <img class="is-on" src="assets/img/botox.jpg" alt="Botox injection at the forehead" loading="lazy" style="object-position:62% 50%">
+          <img src="assets/img/filler.jpg" alt="Filler placed along the cheek" loading="lazy" style="object-position:60% 50%">
+          <img src="assets/img/lips.jpg" alt="Lip filler treatment" loading="lazy" style="object-position:55% 50%">
+          <img src="assets/img/microneedling.jpg" alt="Microneedling treatment" loading="lazy">
+          <img src="assets/img/peel.jpg" alt="Clinical peel applied to the face" loading="lazy">
+          <img src="assets/img/boosters.jpg" alt="Skin booster micro-injection" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatment finder -->
+  <section class="section finder" id="finder">
+    <div class="wrap finder__in">
+      <div>
+        <p class="eyebrow rv">Treatment finder</p>
+        <h2 class="h2 rv" style="--d:.08s">Three questions.<br><em>One starting point.</em></h2>
+        <p class="finder__note rv" style="--d:.16s">No email, no medical details. Your provider refines the plan in person.</p>
+      </div>
+      <div class="quiz rv" style="--d:.12s" id="quiz" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="section" id="results">
+    <div class="wrap results">
+      <div>
+        <p class="eyebrow rv">Results</p>
+        <h2 class="h2 rv" style="--d:.08s">Subtle, and still <em>unmistakably you.</em></h2>
+        <div class="tabs rv" style="--d:.16s" role="tablist" aria-label="Treatments">
+          <button class="tab is-on" role="tab" aria-selected="true" data-ba="botox">Botox® Cosmetic</button>
+          <button class="tab" role="tab" aria-selected="false" data-ba="boosters">Skin boosters</button>
+        </div>
+        <dl class="specs rv" style="--d:.24s" id="ba-specs">
+          <div><dt>Area</dt><dd>Crow’s feet &amp; brow</dd></div>
+          <div><dt>Amount</dt><dd>24 units</dd></div>
+          <div><dt>Photographed</dt><dd>2 weeks after</dd></div>
+        </dl>
+        <p class="results__fine rv" style="--d:.3s">Individual results vary.</p>
+      </div>
+      <figure class="ba rv" style="--d:.12s" id="ba">
+        <img id="ba-after" src="assets/img/ba-botox-after.jpg" alt="After treatment" loading="lazy">
+        <div class="ba__before"><img id="ba-before" src="assets/img/ba-botox-before.jpg" alt="Before treatment" loading="lazy"></div>
+        <span class="fig fig--tl">Before</span>
+        <span class="fig fig--tr">After</span>
+        <span class="ba__line"></span>
+        <input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+        <span class="ba__knob"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="m7 5-5 5 5 5M13 5l5 5-5 5"/></svg></span>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Membership -->
+  <section class="section member" id="membership">
+    <div class="wrap">
+      <div class="member__top">
+        <div>
+          <p class="eyebrow rv">Membership</p>
+          <h2 class="h2 rv" style="--d:.08s">Your monthly fee<br>becomes <em>treatment credit.</em></h2>
+        </div>
+        <div class="calc rv" style="--d:.16s">
+          <label for="spend"><span>What you spend on treatments in a year</span><output id="spend-out" for="spend">$2,400</output></label>
+          <input type="range" id="spend" min="500" max="8000" step="100" value="2400">
+        </div>
+      </div>
+      <div class="tiers">
+        <article class="tier rv" data-pct="0.10" data-fee="99">
+          <div class="tier__name"><span>Essentials</span><span class="tier__flag">Best fit</span></div>
+          <p class="tier__price">$99<small> / mo</small></p>
+          <p class="tier__off">10% off every treatment</p>
+          <p class="tier__save"><span>You save about</span><b>$240</b></p>
+        </article>
+        <article class="tier rv" style="--d:.08s" data-pct="0.15" data-fee="179">
+          <div class="tier__name"><span>Maintain</span><span class="tier__flag">Best fit</span></div>
+          <p class="tier__price">$179<small> / mo</small></p>
+          <p class="tier__off">15% off every treatment</p>
+          <p class="tier__save"><span>You save about</span><b>$360</b></p>
+        </article>
+        <article class="tier rv" style="--d:.16s" data-pct="0.20" data-fee="299">
+          <div class="tier__name"><span>Signature</span><span class="tier__flag">Best fit</span></div>
+          <p class="tier__price">$299<small> / mo</small></p>
+          <p class="tier__off">20% off every treatment</p>
+          <p class="tier__save"><span>You save about</span><b>$480</b></p>
+        </article>
+        <figure class="tiers__media rv" style="--d:.24s">
+          <img src="assets/img/vials.jpg" alt="Vials and syringes on a white surface" loading="lazy" style="object-position:58% 50%">
+        </figure>
+      </div>
+      <p class="member__fine rv">Cancel any time after three months.</p>
+    </div>
+  </section>
+
+  <!-- Medical director -->
+  <section class="section" id="about">
+    <div class="wrap director">
+      <figure class="director__media rv"><img src="assets/img/director.jpg" alt="Dr. Aldous holding a compounded treatment" loading="lazy"></figure>
+      <div>
+        <p class="eyebrow rv">Your medical director</p>
+        <blockquote class="quote rv" style="--d:.08s">“Skin rewards precision, not excess. We measure first, treat lightly and <em>check our work.</em>”</blockquote>
+        <p class="sig-line rv" style="--d:.16s"><span><b>Maren Aldous, MD, FAAD</b><span>Board-certified dermatologist · 14 years in practice</span></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review -->
+  <section class="review">
+    <img src="assets/img/review.jpg" alt="" loading="lazy">
+    <div class="wrap">
+      <div class="review__in">
+        <p class="eyebrow rv">Reviews</p>
+        <div class="review__stars rv" style="--d:.08s"><b>4.9</b><span><i>★★★★★</i>600+ on Google</span></div>
+        <blockquote class="rv" style="--d:.16s">“Nobody could tell what I’d had done. They only asked if I’d been on holiday.”</blockquote>
+        <cite class="rv" style="--d:.24s">Megan R. — Botox® Cosmetic</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section class="section" id="visit">
+    <div class="wrap visit">
+      <figure class="visit__media rv">
+        <img src="assets/img/birmingham.jpg" alt="A park in downtown Birmingham, Michigan, in autumn" loading="lazy" style="object-position:50% 40%">
+      </figure>
+      <div class="visit__card rv" style="--d:.1s">
+        <p class="eyebrow">Visit us</p>
+        <h3 class="h3">Downtown <em>Birmingham</em></h3>
+        <address>255 Pierce Street, Suite 200<br>Birmingham, MI 48009</address>
+        <ul class="hours">
+          <li><span>Mon – Thu</span><span>9:00 – 7:00</span></li>
+          <li><span>Friday</span><span>9:00 – 5:00</span></li>
+          <li><span>Saturday</span><span>9:00 – 3:00</span></li>
+          <li><span>Sunday</span><span>Closed</span></li>
+        </ul>
+        <div class="visit__btns">
+          <a class="btn btn--line" href="tel:+12485550142">(248) 555-0142</a>
+          <a class="btn btn--plum" href="https://www.google.com/maps/search/?api=1&query=Pierce+Street+Birmingham+MI+48009" target="_blank" rel="noopener">Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book -->
+  <section class="section" id="book" style="padding-top:0">
+    <div class="wrap book">
+      <div>
+        <p class="eyebrow rv">Book a consultation</p>
+        <h2 class="display rv" style="--d:.08s">It starts with a <em>consultation.</em></h2>
+        <p class="lede rv" style="--d:.16s">Leave your details. We confirm a time within one business day.</p>
+        <figure class="book__media rv" style="--d:.24s"><img src="assets/img/syringe.jpg" alt="A gloved hand prepares a syringe" loading="lazy"></figure>
+      </div>
+      <form class="form rv" style="--d:.12s" id="book-form" novalidate>
+        <div class="field"><label for="fn">First name</label><input id="fn" name="first" autocomplete="given-name"></div>
+        <div class="field"><label for="ln">Last name</label><input id="ln" name="last" autocomplete="family-name"></div>
+        <div class="field"><label for="em">Email</label><input id="em" type="email" name="email" autocomplete="email"></div>
+        <div class="field"><label for="ph">Phone</label><input id="ph" type="tel" name="phone" autocomplete="tel"></div>
+        <div class="field field--full"><label for="tx">Treatment of interest</label>
+          <select id="tx" name="treatment"><option>Not sure yet</option><option>Botox® Cosmetic</option><option>Dermal filler</option><option>Skin treatments</option><option>Membership</option></select>
+        </div>
+        <fieldset class="field field--full"><legend>Preferred time</legend>
+          <div class="times">
+            <label><input type="radio" name="time" value="Morning" checked><span>Morning</span></label>
+            <label><input type="radio" name="time" value="Midday"><span>Midday</span></label>
+            <label><input type="radio" name="time" value="Evening"><span>Evening</span></label>
+          </div>
+        </fieldset>
+        <button class="btn btn--plum" type="submit">Request my consultation
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2 8h12M9.5 3.5 14 8l-4.5 4.5"/></svg>
+        </button>
+        <p class="form__done" role="status">Thank you. Online requests open soon — call (248) 555-0142 to book today.</p>
+        <p class="form__note">Please leave medical details for your visit.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo/skinlab-wordmark-light.svg" alt="Skin LAB" width="92" height="44">
+        <p>255 Pierce Street, Suite 200<br>Birmingham, MI 48009<br>(248) 555-0142<br>hello@skinlabbirmingham.com</p>
+      </div>
+      <div>
+        <h4>Treatments</h4>
+        <ul><li><a href="#treatments">Botox® Cosmetic</a></li><li><a href="#treatments">Dermal filler</a></li><li><a href="#treatments">Microneedling + PRP</a></li><li><a href="#treatments">Chemical peels</a></li><li><a href="#treatments">Skin boosters</a></li></ul>
+      </div>
+      <div>
+        <h4>Practice</h4>
+        <ul><li><a href="#results">Results</a></li><li><a href="#membership">Membership</a></li><li><a href="#about">Medical director</a></li><li><a href="#finder">Treatment finder</a></li></ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul><li>Mon – Thu 9 – 7</li><li>Fri 9 – 5 · Sat 9 – 3</li><li><a href="#visit">Get directions</a></li><li><a href="#book">Book consultation</a></li></ul>
+      </div>
+    </div>
+    <div class="footer__fine">
+      <p>Results vary. Treatments are performed by licensed medical providers following a consultation. Botox® Cosmetic is a registered trademark of its owner.</p>
+      <div class="footer__legal"><span>© 2026 Skin LAB, PLLC</span><a href="#top">Privacy</a><a href="#top">Terms</a><span>Site by DSPTCH Design</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
