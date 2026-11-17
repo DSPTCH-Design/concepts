@@ -6,6 +6,7 @@ Concept websites by DSPTCH Design. Each folder is a standalone static site deplo
 |---|---|
 | `skinlab/` | Skin LAB |
 | `merrick/` | Merrick Roofing |
+| `merrick-before/` | Merrick Roofing, dated "before" version for ad demos |
 | `arlo/` | ARLO Plumbing |
 | `arlo-before/` | ARLO Plumbing, dated "before" version for ad demos |
 | `qubik/` | QUBIK Architecture + Engineering |
